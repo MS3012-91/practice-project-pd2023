@@ -47,7 +47,14 @@ const Home = (props) => {
               <div className={styles.button}>
                 <Link className={styles.button__link} to="/dashboard">DASHBOARD</Link>
               </div>
-            </div>
+            </div >
+            <div className = {styles.block}>
+<h2> Naming Contests</h2>
+<p>
+Custom name suggestions from 100s of naming experts as you are guided through our naming agency-style process
+</p>
+<button> get a custon</button>
+</div>
             <div className={styles.greyContainer}>
               <SlideBar
                 images={carouselConstants.mainSliderImages}

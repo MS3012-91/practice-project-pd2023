@@ -14,6 +14,7 @@ export default {
   OFFER_STATUS_WON: 'won',
   OFFER_STATUS_PENDING: 'pending',
   STATIC_IMAGES_PATH: '/staticImages/',
+  CONTACT_TEL : '(877) 355-3585',
   ANONYM_IMAGE_PATH: '/staticImages/anonym.png',
   BASE_URL: `http://${serverIP}:${serverPort}/`,
   ACCESS_TOKEN: 'accessToken',
