@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import NamingHomeBox from '../../components/NamingHomeBox';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -47,6 +48,7 @@ const Home = (props) => {
               <div className={styles.button}>
                 <Link className={styles.button__link} to="/dashboard">DASHBOARD</Link>
               </div>
+<<<<<<< HEAD
             </div >
             <div className = {styles.block}>
 <h2> Naming Contests</h2>
@@ -55,6 +57,10 @@ Custom name suggestions from 100s of naming experts as you are guided through ou
 </p>
 <button> get a custon</button>
 </div>
+=======
+            </div>
+            <NamingHomeBox />
+>>>>>>> b2d6c714b064fe9f9265e942cf07f5f7ce285b8a
             <div className={styles.greyContainer}>
               <SlideBar
                 images={carouselConstants.mainSliderImages}

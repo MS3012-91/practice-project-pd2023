@@ -7,7 +7,6 @@ import RegistrationForm
 import styles from './RegistrationPage.module.sass';
 import { clearErrorSignUpAndLogin } from '../../actions/actionCreator';
 import CONSTANTS from '../../constants';
-import Art from './Articles/art';
 import Footer from './Articles/art';
 
 
@@ -29,8 +28,10 @@ const RegistrationPage = (props) => {
         </div>
         <RegistrationForm history={props.history} />
       </div>
-     <Footer/>
-          </div>
+      <div className={styles.footer}>
+          <Footer> </Footer>
+      </div>
+    </div>
   );
 };
 
