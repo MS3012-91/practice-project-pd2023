@@ -9,6 +9,10 @@ import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
 import NamingHomeBox from '../../components/NamingHomeBox';
+import NamingContests from './HomeComponents/NamingContests/NamingContests';
+import GotQuestions from './HomeComponents/Got Questions/GotQuestions';
+import BestNamingPlatform from './HomeComponents/Best Naming Platform/BestNamingPlatform';
+
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -48,20 +52,10 @@ const Home = (props) => {
               <div className={styles.button}>
                 <Link className={styles.button__link} to="/dashboard">DASHBOARD</Link>
               </div>
-<<<<<<< HEAD
-            </div >
-            <div className = {styles.block}>
-<h2> Naming Contests</h2>
-<p>
-Custom name suggestions from 100s of naming experts as you are guided through our naming agency-style process
-</p>
-<button> get a custon</button>
-</div>
-=======
             </div>
-            <NamingHomeBox />
->>>>>>> b2d6c714b064fe9f9265e942cf07f5f7ce285b8a
             <div className={styles.greyContainer}>
+            <NamingContests />
+            <BestNamingPlatform />
               <SlideBar
                 images={carouselConstants.mainSliderImages}
                 carouselType={carouselConstants.MAIN_SLIDER}
@@ -203,6 +197,9 @@ Custom name suggestions from 100s of naming experts as you are guided through ou
                 <img src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/3-compressed.gif`} alt="compressed" />
               </div>
             </div>
+          <GotQuestions/>
+
+
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
               <p className={styles.blueUnderline}>
@@ -225,18 +222,20 @@ Custom name suggestions from 100s of naming experts as you are guided through ou
                 images={carouselConstants.feedbackSliderImages}
                 carouselType={carouselConstants.FEEDBACK_SLIDER}
               />
+             
             </div>
           </div>
           <Footer />
-        </>
+          </>
       )}
     </>
   );
 };
 
 const mapStateToProps = (state) => {
-  const { isFetching } = state.userStore;
-  return { isFetching };
-};
+  const { isFetching } = state.userStore
+  return { isFetching }
+} 
 
-export default connect(mapStateToProps, null)(Home);
+
+export default connect(mapStateToProps, null)(Home) 
